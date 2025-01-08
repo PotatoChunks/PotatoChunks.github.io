@@ -1,1 +1,84 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                <span>我的博客</span>
+            </a>
+            <button class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="typing-text">欢迎来到我的博客</h1>
+            <p>分享技术、生活和创意</p>
+        </div>
+    </section>
+
+    <!-- Article Categories -->
+    <div class="article-categories"></div>
+
+    <!-- Article Grid -->
+    <div class="article-grid"></div>
+
+    <!-- Article Modal -->
+    <div class="article-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h2 class="article-title"></h2>
+            <div class="article-meta">
+                <span class="article-date"></span>
+            </div>
+            <div class="article-tags"></div>
+            <div class="article-cover">
+                <img src="" alt="">
+            </div>
+            <div class="article-body"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>关于博客</h3>
+                <p>这是一个分享技术、生活和创意的个人博客，希望能为您带来有价值的内容。</p>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <div class="social-links">
+                    <a href="https://github.com/PotatoChunks"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> 我的博客.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="scripts/articles.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html> 
