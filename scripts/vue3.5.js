@@ -5177,8 +5177,8 @@ If this is a native custom element, make sure to exclude it from component resol
             Fragment,
             {
                 key: (props.key || // slot content array of a dynamic conditional slot may have a branch
-                    // key attached in the `createSlots` helper, respect that
-                    validSlotContent && validSlotContent.key || `_${name}`) + // #7256 force differentiate fallback content from actual content
+                        // key attached in the `createSlots` helper, respect that
+                        validSlotContent && validSlotContent.key || `_${name}`) + // #7256 force differentiate fallback content from actual content
                     (!validSlotContent && fallback ? "_fb" : "")
             },
             validSlotContent || (fallback ? fallback() : []),
